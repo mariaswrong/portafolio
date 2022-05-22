@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Urrego Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1">보니벨</a></h1>
+            </div>
+            <ul>
+                <li><a href="#seccion2">INFORMACIÓN</a></li>
+                <li><a href="#seccion3">TRABAJOS</a></li>
+                <li><a href="#seccion4">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+            <div class="wrap">
+                <h1>환영하다!</h1> <h2>¡Bienvenidos!</h2>
+                <p>¡Bienvenido! Mi nombre es María y te doy la bienvenida a mi portafolio. Podrás encontrar distintos trabajos
+                    que he realizado, espero que puedas disfrutar mis piezas gráficas.
+                </p>
+                    <div class="down animate__animated animate__bounce animate__1"><a href="#seccion2">
+                        <i class="fa-solid fa-circle-chevron-down"></i></a>
+                    </div>
+            </div>
+    </section>
+     
+    <section class="informacion" id="seccion2">
+        <div class="wrap">
+            <h1>범죄 신고</h1> <h2>Información</h2>
+            <p>Mi nombre es María Urrego, tengo 19 años y actualmente soy estudiante de Diseño Gráfico. 
+                Entre los trabajos que podrás hallar en este portafolio virtual, se encuentran varias ilustraciones.</p>
+                <ul>
+                    <li><a href="#">Hoja de vida</a></li>
+                    <li><a href="#">Otros trabajos</a></li>
+                </ul>
+                <div class="down animate__animated animate__bounce animate__2"><a href="#seccion3">
+                    <i class="fa-solid fa-circle-chevron-down"></i></a>
+                </div>
+        </div>
+</section>
+
+    <section class="trabajos" id="seccion3">
+        <div class="wrap">
+            <h1>채용 정보</h1> <h2>Trabajos</h2>
+            <p>Las ilustraciones que verás a continuación hacen parte de uno de mis trabajos universitarios, éstos representan 
+                a una mujer que, a medida que avanza el libro, se le va viendo lastimada por circunstancias de la vida. El estilo 
+                usado para el relleno de la figura es a base de trama, y con los colores buscaba un contraste entre lo visualmente 
+                satisfactorio y la sangre o moretones en el personaje.</p>
+            <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/primero.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>  
+    </section>
+
+
+    <section class="contacto" id="seccion4">
+        <div class="wrap">
+            <h1>연락하다</h1> <h2>Contacto</h2>
+            <p>Muchas gracias por visitar mi portafolio. <br> Por favor, envíame un correo para más información. ¡Adiós!</p>
+            <ul>
+            <div class="down animate__animated animate__bounce animate__1"><a href="#seccion4"></a>
+                <li><a data-auto-recognition="true" href="mailto:maria.urregogi@amigo.edu.co"><i class="fa-solid fa-envelope"></i></a></li>
+            </div>
+            </ul>
+        </div>
+    </section>
+
+<footer>
+    <h1>María Urrego 2022©</h1>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>

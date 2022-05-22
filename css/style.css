@@ -1,0 +1,618 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, 'Single Day', cursive;;
+    text-decoration: none;
+}
+
+body {
+    background-color: #faedcd;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: #faedcd;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+nav .container .logo h1 a{
+    color: #f08080;
+    font-size: 2em;
+}
+
+nav .container .logo h1 a:hover{
+    color: #f94144;
+}
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+    font-weight: 500;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: #31572c;
+    padding: .8em 1em;
+}
+
+nav .container ul li a:hover{
+    color: #ecf39e;
+    background-color:#90a955;
+    border-radius: 1.5em;
+}
+
+/*secciones de contenido*/
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: #faedcd;
+    font-size: 1.4em;
+}
+
+/*Primero*/
+
+.bienvenida .down {
+    margin-top: 2em;
+}
+
+.bienvenida {
+    background-color: #ddb892;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+}
+
+.bienvenida h1{
+    color: #78290f;
+    font-size: 3.5em;
+    padding-top: .6em;
+}
+
+.bienvenida h2{
+    color: #83402a;
+    font-family:  'Single Day', cursive;
+    font-size: 1.5em;
+    padding-bottom: .6em;
+}
+
+.bienvenida p{
+    color: #7f5539;
+    font-size: .8em;
+    text-align: justify;
+}
+
+.bienvenida i{
+    color: #4f772d;
+}
+
+.bienvenida i:hover{
+    color: #90a955;
+}
+
+/*Segundo*/
+
+.informacion{
+    background-color: #adc178;
+}
+
+.informacion h1{
+    color: #386641;
+    font-size: 3.5em;
+    padding-top: .6em;
+}
+
+.informacion h2{
+    color: #477450;
+    font-family:  'Single Day', cursive;
+    font-size: 1.5em;
+    padding-bottom: .6em;
+}
+
+.informacion p{
+    color: white;
+    font-size: .8em;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.informacion ul li {
+    display: inline;
+    padding: .2em;
+    font-weight: 500;
+}
+
+.informacion ul li a{
+    color: #ddb892;
+    background-color: #9b6541;
+    padding: .8em;
+    border-radius: 1.5em;
+}
+
+.informacion ul li a:hover{
+    color: #b38465;
+    background-color:#78290f;
+}
+.informacion i{
+    margin-top: 2em;
+    padding: 50px;
+    color: #9b6541;
+}
+
+.informacion i:hover{
+    color: #7c421c;
+}
+
+/*Tercero*/
+
+.trabajos{
+    padding: 1.2em;
+    background-color: #ddb892;
+}
+
+.trabajos h1{
+    color: #78290f;
+    font-size: 3.5em;
+    padding-top: .6em;
+}
+
+.trabajos h2{
+    color: #83402a;
+    font-family:  'Single Day', cursive;
+    font-size: 1.5em;
+    padding-bottom: .6em;
+}
+
+.trabajos p{
+    color: #7f5539;
+    font-size: .8em;
+    padding-bottom: 3em;
+    text-align: justify;
+}
+
+/*Cuarto*/
+
+.contacto{
+    background-color: #adc178;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),0 100%);
+}
+
+.contacto h1{
+    color: #386641;
+    font-size: 3.5em;
+    padding-top: .6em;
+}
+
+.contacto h2{
+    color: #477450;
+    font-family:  'Single Day', cursive;
+    font-size: 1.5em;
+    padding-bottom: .6em;
+}
+
+.contacto p{
+    color: white;
+    font-size: .8em;
+    text-align: center;
+}
+
+.contacto ul li{
+    color: white;
+    font-size: .8em;
+    list-style: none;
+}
+
+.contacto i{
+    font-size: 2em;
+    color: #9b6541;
+    padding: .5em;
+}
+
+.contacto i:hover{
+    color: #7c421c;
+}
+
+/*Pie de página*/
+
+footer{
+    font-size: .5em;
+    text-align: center;
+    color: #31572c;
+}
+
+footer h1{
+    font-weight: 400;
+}
+
+
+
+/*Slider*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.1em;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  /*Animación*/
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
+
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+
+
+   /* Primero ; 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    .container{
+        padding: .1em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+    font-size: 1.5em;
+}
+
+/*primero*/
+
+    .bienvenida h1{
+        font-size: 4.5em;
+    }
+
+    .bienvenida h2{
+        font-size: 2.5em;
+    }
+    
+    .bienvenida p{
+        font-size: 1.3em;
+    }
+
+    .bienvenida i{
+        font-size: 1.5em;
+    }
+
+/*segundo*/
+
+    .informacion h1{
+        font-size: 4.5em;
+    }
+
+    .informacion h2{
+        font-size: 2.5em;
+    }
+
+    .informacion p{
+        font-size: 1.3em;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: .1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+        color: #ddb892;
+        background-color: #9b6541;
+        font-size: .6em;
+        padding: .8em;
+        border-radius: 1.5em;
+    }
+
+
+    .informacion i{
+        font-size: 1.5em;
+    }
+
+/*tercero*/
+
+    .trabajos h1{
+        font-size: 4.5em;
+    }
+
+    .trabajos h2{
+        font-size: 2.5em;
+    }
+
+    .trabajos p{
+        font-size: 1.1em;
+    }
+
+/*cuarto*/
+
+    .contacto h1{
+        font-size: 4.5em;
+    }
+
+    .contacto h2{
+        font-size: 2.5em;
+    }
+
+    .contacto p{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .contacto i{
+        font-size: 2.2em;
+    }
+
+  }
+  
+
+  /*Segundo ; 481px a 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .container{
+        padding: 0em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+        font-size: 1em;
+    }
+
+    nav .container ul li a{
+        font-size: .5em;
+    }
+
+/*primero*/
+
+    .bienvenida h1{
+        font-size: 2em;
+    }
+
+    .bienvenida h2{
+        font-size: 1.5em;
+    }
+    
+    .bienvenida p{
+        font-size: .8em;
+    }
+
+    .bienvenida i{
+        font-size: 1em;
+    }
+
+/*segundo*/
+
+    .informacion h1{
+        font-size: 2em;
+    }
+
+    .informacion h2{
+        font-size: 1.5em;
+    }
+
+    .informacion p{
+        font-size: .8em;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: .1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+        color: #ddb892;
+        background-color: #9b6541;
+        font-size: .6em;
+        padding: .8em;
+        border-radius: 1.5em;
+    }
+
+    .informacion i{
+        font-size: 1em;
+    }
+
+/*tercero*/
+
+    .trabajos h1{
+        font-size: 2em;
+    }
+
+    .trabajos h2{
+        font-size: 1.5em;
+    }
+
+    .trabajos p{
+        font-size: .9em;
+        text-align: left;
+    }
+
+/*cuarto*/
+
+    .contacto h1{
+        font-size: 2em;
+    }
+
+    .contacto h2{
+        font-size: 1.5em;
+    }
+
+    .contacto p{
+        font-size: .8em;
+        text-align: justify;
+        margin-bottom: 1em;
+    }
+
+    .contacto i{
+        font-size: 2em;
+    }
+
+  }
+  
+  /*Tercero ; 320px a 479px */
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .container{
+        padding: 0em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+        font-size: .6em;
+    }
+
+    nav .container ul li a{
+        font-size: .4em;
+    }
+
+/*primero*/
+
+    .bienvenida h1{
+        font-size: 1.3em;
+    }
+
+    .bienvenida h2{
+        font-size: 1em;
+    }
+    
+    .bienvenida p{
+        font-size: .6em;
+    }
+
+    .bienvenida i{
+        font-size: 1em;
+    }
+
+/*segundo*/
+
+    .informacion h1{
+        font-size: 1em;
+    }
+
+    .informacion h2{
+        font-size: .9em;
+    }
+
+    .informacion p{
+        font-size: .7em;
+        text-align: center;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: .1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+        color: #ddb892;
+        background-color: #9b6541;
+        font-size: .4em;
+        padding: .8em;
+        border-radius: 1.5em;
+    }
+
+    .informacion i{
+        font-size: 1em;
+    }
+
+/*tercero*/
+
+    .trabajos h1{
+        font-size: 1.1em;
+    }
+
+    .trabajos h2{
+        font-size: .9em;
+    }
+
+    .trabajos p{
+        font-size: .6em;
+    }
+
+/*cuarto*/
+
+    .contacto h1{
+        font-size: 1.1em;
+    }
+
+    .contacto h2{
+        font-size: .9em;
+    }
+
+    .contacto p{
+        font-size: .6em;
+        text-align: justify;
+        margin-bottom: 1em;
+    }
+
+    .contacto i{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size: .3em;
+    }
+
+}
+
